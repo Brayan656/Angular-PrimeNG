@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableModule } from 'primeng/table';
-import {ProgressBarModule} from 'primeng/progressbar';
-
+import { ProgressBarModule } from 'primeng/progressbar';
+import { AccordionModule } from 'primeng/accordion';
+import {ToastModule} from 'primeng/toast';
 
 @NgModule({
   declarations: [],
@@ -11,12 +12,16 @@ import {ProgressBarModule} from 'primeng/progressbar';
     CommonModule,
     BrowserAnimationsModule,
     TableModule,
-    ProgressBarModule
+    ProgressBarModule,
+    AccordionModule,
+    ToastModule
   ],exports:[
     CommonModule,
     BrowserAnimationsModule,
     TableModule,
-    ProgressBarModule
+    ProgressBarModule,
+    AccordionModule,
+    ToastModule
   ]
 })
 export class PrimeModule { }
