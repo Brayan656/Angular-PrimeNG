@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { TableModule } from 'primeng/table';
+import {ProgressBarModule} from 'primeng/progressbar';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TableModule,
+    ProgressBarModule
   ],exports:[
     CommonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TableModule,
+    ProgressBarModule
   ]
 })
 export class PrimeModule { }
